@@ -30,8 +30,14 @@ export default function Home() {
         </a>
         
         <div className="container mx-auto flex items-center justify-between h-20" style={{paddingLeft: '25px'}}>
+          {/* Left: Logo Placeholder (empty for flex layout) */}
+          <div className="flex items-center invisible">
+            <a href="#" className="block">
+              <img src="/images/logo.png" alt="TaleX Logo" className="h-8 w-auto" style={{height: '36px'}} />
+            </a>
+          </div>
 
-          {/* Center: Navigation - Placeholder for flex layout */}
+          {/* Center: Navigation */}
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-black absolute left-1/2 -translate-x-1/2" style={{marginLeft: '-102px'}}>
             {/* Explore Dropdown */}
             <div 
