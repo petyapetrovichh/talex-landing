@@ -28,7 +28,7 @@ export default function Home() {
           {/* Left: Logo */}
           <div className="flex items-center">
             <a href="#" className="block">
-              <img src="/images/logo.png" alt="TaleX Logo" className="h-8 w-auto" style={{height: '36px', marginLeft: '-117px'}} />
+              <img src="/images/logo.png" alt="TaleX Logo" className="h-8 w-auto" style={{height: '36px'}} />
             </a>
           </div>
 
