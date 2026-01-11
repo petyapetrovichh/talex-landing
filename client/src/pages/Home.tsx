@@ -89,7 +89,7 @@ export default function Home() {
                 <ChevronDown className="w-4 h-4" />
               </button>
               {companyOpen && (
-                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg p-3 min-w-max z-50" style={{marginTop: '-2px'}}>
+                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg p-3 min-w-max z-50" style={{marginTop: '0px'}}>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">About</a>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Help</a>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Contact</a>
@@ -111,7 +111,7 @@ export default function Home() {
                 <ChevronDown className="w-4 h-4" />
               </button>
               {communityOpen && (
-                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg p-3 min-w-max z-50" style={{marginTop: '2px'}}>
+                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg p-3 min-w-max z-50" style={{marginTop: '0px'}}>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">X</a>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Telegram</a>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Discord</a>
