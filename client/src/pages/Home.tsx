@@ -49,7 +49,7 @@ export default function Home() {
           </div>
 
           {/* Center: Navigation */}
-          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-black absolute left-1/2 -translate-x-1/2" style={{marginLeft: '-102px'}}>
+          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-black absolute left-0" style={{paddingLeft: '120px'}}>
             {/* Explore Dropdown */}
             <div 
               className="relative"
