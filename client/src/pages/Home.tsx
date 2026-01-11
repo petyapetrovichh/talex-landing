@@ -209,17 +209,7 @@ export default function Home() {
               Tell a Tale
             </Button>
           </div>
-          <div className="relative flex justify-center">
-            <div className="relative z-10 w-[300px] md:w-[350px] border border-black/10 bg-white shadow-2xl shadow-black/5 p-2 rounded-[2rem]">
-              <img 
-                src="/images/mobile-app-interface-1.png" 
-                alt="TaleX App Interface" 
-                className="w-full h-auto rounded-[1.8rem]"
-              />
-            </div>
-            {/* Decorative elements */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px] -z-10"></div>
-          </div>
+
         </div>
       </section>
 
