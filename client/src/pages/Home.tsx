@@ -40,7 +40,7 @@ export default function Home() {
       }`}>
         {/* Logo - Independent positioning */}
         <a href="#" className="block absolute left-0 top-1/2 -translate-y-1/2" style={{paddingLeft: '25px'}}>
-          <img src="/images/logo.png" alt="TaleX Logo" className="h-8 w-auto" style={{height: '36px'}} />
+          <img src="/images/logo.png" alt="TaleX Logo" className="h-8 w-auto" style={{height: '25px'}} />
         </a>
         
         <div className="container mx-auto flex items-center justify-between h-20" style={{paddingLeft: '25px'}}>
