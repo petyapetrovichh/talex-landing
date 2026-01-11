@@ -20,6 +20,9 @@ export default function Home() {
   const [buttonHovered, setButtonHovered] = useState(false);
   const [buttonClicked, setButtonClicked] = useState(false);
   const [buttonSpring, setButtonSpring] = useState(false);
+  const [buttonTaleHovered, setButtonTaleHovered] = useState(false);
+  const [buttonTaleClicked, setButtonTaleClicked] = useState(false);
+  const [buttonTaleSpring, setButtonTaleSpring] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -184,7 +187,25 @@ export default function Home() {
             <p className="text-lg md:text-xl text-gray-600 max-w-xl leading-relaxed" style={{marginBottom: '25px', marginLeft: '-100px', width: '598px'}}>
               TaleX is a new content app where creators and fans grow together. Here, supporting content means more than donating — it means predicting its future and helping it spread. Every Tale, whether it's an article, book, podcast, or video, has X ways to travel farther, faster, and reward those who believe in it.
             </p>
-            <Button className="bg-primary text-white hover:bg-black rounded-none h-14 px-8 text-lg font-bold uppercase tracking-wide" style={{marginLeft: '-100px', color: '#000000', backgroundColor: '#6ff000', borderRadius: '1000px'}}>
+            <Button 
+              className={`bg-primary text-white hover:bg-black rounded-none h-14 px-8 text-lg font-bold uppercase tracking-wide ${buttonTaleSpring ? 'spring-button' : ''}`}
+              style={{marginLeft: '-100px', color: buttonTaleHovered || buttonTaleClicked ? '#ffffff' : '#000000', backgroundColor: buttonTaleHovered || buttonTaleClicked ? '#000000' : '#6ff000', borderRadius: '1000px'}}
+              onClick={() => {
+                setButtonTaleClicked(true);
+                setButtonTaleSpring(true);
+                setTimeout(() => setButtonTaleSpring(false), 400);
+                setTimeout(() => {
+                  window.location.href = 'https://www.talex.world/profile';
+                }, 200);
+              }}
+              onMouseEnter={() => setButtonTaleHovered(true)}
+              onMouseLeave={() => {
+                setButtonTaleHovered(false);
+                if (!buttonTaleClicked) {
+                  // Reset if not clicked
+                }
+              }}
+            >
               Tell a Tale
             </Button>
           </div>
