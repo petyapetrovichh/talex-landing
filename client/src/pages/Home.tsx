@@ -49,7 +49,7 @@ export default function Home() {
           </div>
 
           {/* Center: Navigation */}
-          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-black absolute left-0" style={{paddingLeft: '140px'}}>
+          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-black absolute left-0" style={{paddingLeft: '140px', marginLeft: '153px'}}>
             {/* Explore Dropdown */}
             <div 
               className="relative"
@@ -64,7 +64,7 @@ export default function Home() {
                 <ChevronDown className="w-4 h-4" />
               </button>
               {exploreOpen && (
-                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg p-3 min-w-max z-50">
+                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg p-3 min-w-max z-50" style={{marginTop: '-5px'}}>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">TaleX App</a>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Our Model</a>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Featured</a>
@@ -86,7 +86,7 @@ export default function Home() {
                 <ChevronDown className="w-4 h-4" />
               </button>
               {companyOpen && (
-                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg p-3 min-w-max z-50">
+                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg p-3 min-w-max z-50" style={{marginTop: '-5px'}}>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">About</a>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Help</a>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Contact</a>
@@ -108,7 +108,7 @@ export default function Home() {
                 <ChevronDown className="w-4 h-4" />
               </button>
               {communityOpen && (
-                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg p-3 min-w-max z-50">
+                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg p-3 min-w-max z-50" style={{marginTop: '-5px'}}>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">X</a>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Telegram</a>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Discord</a>
