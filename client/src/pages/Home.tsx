@@ -33,7 +33,7 @@ export default function Home() {
           </div>
 
           {/* Center: Navigation */}
-          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-500 absolute left-1/2 -translate-x-1/2" style={{marginLeft: '-102px'}}>
+          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-black absolute left-1/2 -translate-x-1/2" style={{marginLeft: '-102px'}}>
             {/* Explore Dropdown */}
             <div 
               className="relative group"
@@ -41,7 +41,7 @@ export default function Home() {
               onMouseLeave={() => setExploreOpen(false)}
             >
               <button 
-                className="flex items-center gap-1 hover:text-black transition-colors" 
+                className="flex items-center gap-1 hover:text-black transition-colors text-black" 
                 style={{fontSize: '17px', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif', marginLeft: '-22px'}}
               >
                 Explore
@@ -49,9 +49,9 @@ export default function Home() {
               </button>
               {exploreOpen && (
                 <div className="absolute top-full left-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg p-3 min-w-max z-50">
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">TaleX App</a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">Our Model</a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">Featured</a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">TaleX App</a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Our Model</a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Featured</a>
                 </div>
               )}
             </div>
@@ -63,7 +63,7 @@ export default function Home() {
               onMouseLeave={() => setCompanyOpen(false)}
             >
               <button 
-                className="flex items-center gap-1 hover:text-black transition-colors" 
+                className="flex items-center gap-1 hover:text-black transition-colors text-black" 
                 style={{fontSize: '17px', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif', marginLeft: '20px'}}
               >
                 Company
@@ -71,9 +71,9 @@ export default function Home() {
               </button>
               {companyOpen && (
                 <div className="absolute top-full left-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg p-3 min-w-max z-50">
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">About</a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">Help</a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">Contact</a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">About</a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Help</a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Contact</a>
                 </div>
               )}
             </div>
@@ -85,7 +85,7 @@ export default function Home() {
               onMouseLeave={() => setCommunityOpen(false)}
             >
               <button 
-                className="flex items-center gap-1 hover:text-black transition-colors" 
+                className="flex items-center gap-1 hover:text-black transition-colors text-black" 
                 style={{fontSize: '17px', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif', marginLeft: '17px'}}
               >
                 Community
@@ -93,17 +93,17 @@ export default function Home() {
               </button>
               {communityOpen && (
                 <div className="absolute top-full left-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg p-3 min-w-max z-50">
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">X</a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">Telegram</a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">Discord</a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">Binance Square</a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">CoinMarketCap</a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">Facebook</a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">YouTube</a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">Instagram</a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">TikTok</a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">Spotify</a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">LinkedIn</a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">X</a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Telegram</a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Discord</a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Binance Square</a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">CoinMarketCap</a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Facebook</a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">YouTube</a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Instagram</a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">TikTok</a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Spotify</a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">LinkedIn</a>
                 </div>
               )}
             </div>
@@ -155,8 +155,10 @@ export default function Home() {
       <section className="pt-32 pb-20 md:pt-48 md:pb-32 border-b border-black/5">
         <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <h1 className="text-5xl md:text-7xl font-display font-bold leading-[0.9] tracking-tight text-black">
-              TaleX is where <span className="text-primary">great content</span> pays off both creators and supporters
+            <h1 className="text-5xl md:text-7xl font-display font-bold leading-[1.1] tracking-tight text-black">
+              TaleX is where<br />
+              <span className="text-primary" style={{color: '#6ff000'}}>great content pays off</span><br />
+              both creators and supporters
             </h1>
             <p className="text-lg md:text-xl text-gray-600 max-w-xl leading-relaxed">
               TaleX is a new content app where creators and fans grow together. Here, supporting content means more than donating — it means predicting its future and helping it spread.
