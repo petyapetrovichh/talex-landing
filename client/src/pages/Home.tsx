@@ -48,7 +48,7 @@ export default function Home() {
                 <ChevronDown className="w-4 h-4" />
               </button>
               {exploreOpen && (
-                <div className="absolute top-full left-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg p-3 min-w-max z-50">
+                <div className="absolute top-full left-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg p-3 min-w-max z-50" style={{left: '-22px'}}>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">TaleX App</a>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Our Model</a>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Featured</a>
@@ -70,7 +70,7 @@ export default function Home() {
                 <ChevronDown className="w-4 h-4" />
               </button>
               {companyOpen && (
-                <div className="absolute top-full left-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg p-3 min-w-max z-50">
+                <div className="absolute top-full left-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg p-3 min-w-max z-50" style={{left: '20px'}}>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">About</a>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Help</a>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Contact</a>
@@ -92,7 +92,7 @@ export default function Home() {
                 <ChevronDown className="w-4 h-4" />
               </button>
               {communityOpen && (
-                <div className="absolute top-full left-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg p-3 min-w-max z-50">
+                <div className="absolute top-full left-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg p-3 min-w-max z-50" style={{left: '17px'}}>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">X</a>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Telegram</a>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Discord</a>
@@ -157,7 +157,7 @@ export default function Home() {
           <div className="space-y-8">
             <h1 className="text-5xl md:text-7xl font-display font-bold leading-[1.1] tracking-tight text-black" style={{fontSize: '50px', width: '800px', marginLeft: '-100px', marginTop: '-250px', marginBottom: '25px'}}>
               TaleX is where<br />
-              <span className="text-primary" style={{color: '#6ff000'}}>great content pays off</span><br />
+              <span className="text-primary" style={{color: '#6ff000'}}>great content</span> <span className="text-primary" style={{color: '#6ff000'}}>pays off</span><br />
               both creators and supporters
             </h1>
             <p className="text-lg md:text-xl text-gray-600 max-w-xl leading-relaxed" style={{marginBottom: '25px', marginLeft: '-100px'}}>
