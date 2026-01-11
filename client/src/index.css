@@ -41,8 +41,8 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
   
-  --font-sans: "Inter", sans-serif;
-  --font-display: "Space Grotesk", sans-serif;
+  --font-sans: "Alibaba PuHuiTi 3.0", sans-serif;
+  --font-display: "Alibaba PuHuiTi 3.0", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 }
 
@@ -124,10 +124,12 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-background text-foreground antialiased;
+    font-family: "Alibaba PuHuiTi 3.0", sans-serif;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display font-bold tracking-tight;
+    @apply font-bold tracking-tight;
+    font-family: "Alibaba PuHuiTi 3.0", sans-serif;
   }
   
   /* Custom Scrollbar */
