@@ -33,10 +33,10 @@ export default function Home() {
           </div>
 
           {/* Center: Navigation */}
-          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-black absolute left-1/2 -translate-x-1/2" style={{marginLeft: '-102px'}}>
+          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-black absolute left-1/2 -translate-x-1/2" style={{marginLeft: '-142px', paddingLeft: '40px', paddingRight: '40px', marginRight: '-142px'}}>
             {/* Explore Dropdown */}
             <div 
-              className="relative group"
+              className="relative group px-8 py-2"
               onMouseEnter={() => setExploreOpen(true)}
               onMouseLeave={() => setExploreOpen(false)}
             >
@@ -58,7 +58,7 @@ export default function Home() {
 
             {/* Company Dropdown */}
             <div 
-              className="relative group"
+              className="relative group px-8 py-2"
               onMouseEnter={() => setCompanyOpen(true)}
               onMouseLeave={() => setCompanyOpen(false)}
             >
@@ -80,7 +80,7 @@ export default function Home() {
 
             {/* Community Dropdown */}
             <div 
-              className="relative group"
+              className="relative group px-8 py-2"
               onMouseEnter={() => setCommunityOpen(true)}
               onMouseLeave={() => setCommunityOpen(false)}
             >
@@ -157,11 +157,11 @@ export default function Home() {
           <div className="space-y-8">
             <h1 className="text-5xl md:text-7xl font-display font-bold leading-[1.1] tracking-tight text-black" style={{fontSize: '50px', width: '800px', marginLeft: '-100px', marginTop: '-250px', marginBottom: '25px'}}>
               TaleX is where<br />
-              <span className="text-primary" style={{color: '#6ff000'}}>great content</span> <span className="text-primary" style={{color: '#6ff000'}}>pays off</span><br />
+              <span className="text-primary" style={{color: '#000000'}}>great content</span> <span className="text-primary" style={{color: '#000000'}}>pays off</span><br />
               both creators and supporters
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 max-w-xl leading-relaxed" style={{marginBottom: '25px', marginLeft: '-100px'}}>
-              TaleX is a new content app where creators and fans grow together. Here, supporting content means more than donating — it means predicting its future and helping it spread.
+            <p className="text-lg md:text-xl text-gray-600 max-w-xl leading-relaxed" style={{marginBottom: '25px', marginLeft: '-100px', width: '609px', height: '196px'}}>
+              TaleX is a new content app where creators and fans grow together. Here, supporting content means more than donating — it means predicting its future and helping it spread. Every Tale, whether it's an article, book, podcast, or video, has X ways to travel farther, faster, and reward those who believe in it.
             </p>
             <Button className="bg-primary text-white hover:bg-black rounded-none h-14 px-8 text-lg font-bold uppercase tracking-wide" style={{marginLeft: '-100px', color: '#000000', backgroundColor: '#6ff000', borderRadius: '1000px'}}>
               Tell a Tale
