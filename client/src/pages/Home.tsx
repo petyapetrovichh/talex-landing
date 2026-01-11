@@ -1,7 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Play, User, Globe, ShieldCheck, Zap } from "lucide-react";
+import { ArrowRight, Play, User, Globe, ShieldCheck, Zap, ChevronDown, Search } from "lucide-react";
+import { useState } from "react";
 
 export default function Home() {
+  const [exploreOpen, setExploreOpen] = useState(false);
+  const [communityOpen, setCommunityOpen] = useState(false);
+  const [companyOpen, setCompanyOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-white text-black selection:bg-primary selection:text-white font-sans">
       {/* Navigation */}
@@ -16,20 +21,89 @@ export default function Home() {
 
           {/* Center: Navigation */}
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-500 absolute left-1/2 -translate-x-1/2">
-            <a href="#" className="hover:text-black transition-colors">Explore</a>
-            <a href="#" className="hover:text-black transition-colors">Community</a>
+            {/* Explore Dropdown */}
+            <div className="relative group">
+              <button 
+                className="flex items-center gap-1 hover:text-black transition-colors" 
+                style={{fontSize: '17px', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif'}}
+                onMouseEnter={() => setExploreOpen(true)}
+                onMouseLeave={() => setExploreOpen(false)}
+              >
+                Explore
+                <ChevronDown className="w-4 h-4" />
+              </button>
+              {exploreOpen && (
+                <div className="absolute top-full left-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg p-3 min-w-max z-50">
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">TaleX App</a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">Our Model</a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">Featured</a>
+                </div>
+              )}
+            </div>
+
+            {/* Company Dropdown */}
+            <div className="relative group">
+              <button 
+                className="flex items-center gap-1 hover:text-black transition-colors" 
+                style={{fontSize: '17px', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif'}}
+                onMouseEnter={() => setCompanyOpen(true)}
+                onMouseLeave={() => setCompanyOpen(false)}
+              >
+                Company
+                <ChevronDown className="w-4 h-4" />
+              </button>
+              {companyOpen && (
+                <div className="absolute top-full left-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg p-3 min-w-max z-50">
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">About</a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">Help</a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">Contact</a>
+                </div>
+              )}
+            </div>
+
+            {/* Community Dropdown */}
+            <div className="relative group">
+              <button 
+                className="flex items-center gap-1 hover:text-black transition-colors" 
+                style={{fontSize: '17px', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif', marginLeft: '17px'}}
+                onMouseEnter={() => setCommunityOpen(true)}
+                onMouseLeave={() => setCommunityOpen(false)}
+              >
+                Community
+                <ChevronDown className="w-4 h-4" />
+              </button>
+              {communityOpen && (
+                <div className="absolute top-full left-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg p-3 min-w-max z-50">
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">X</a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">Telegram</a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">Discord</a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">Binance Square</a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">CoinMarketCap</a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">Facebook</a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">YouTube</a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">Instagram</a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">TikTok</a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">Spotify</a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors">LinkedIn</a>
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Right: Search & Action */}
           <div className="flex items-center gap-6">
             <div className="hidden md:block relative group">
-              <input 
-                type="text" 
-                placeholder="Search TaleX..." 
-                className="bg-transparent border-b border-gray-300 focus:border-primary outline-none w-48 py-1 text-black placeholder-gray-400 transition-all text-sm"
-              />
+              <div className="relative flex items-center">
+                <Search className="absolute left-3 w-4 h-4 text-gray-400" />
+                <input 
+                  type="text" 
+                  placeholder="Search TaleX..." 
+                  className="bg-transparent border-b border-gray-300 focus:border-primary outline-none w-48 py-1 text-black placeholder-gray-400 transition-all text-sm pl-8" 
+                  style={{backgroundColor: '#f6f6f6', borderRadius: '1000px', borderColor: '#dddddd', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif'}}
+                />
+              </div>
             </div>
-            <Button variant="outline" className="hidden md:flex border-black/20 hover:bg-black hover:text-white rounded-none font-mono text-xs uppercase tracking-wider">
+            <Button variant="outline" className="hidden md:flex border-black/20 hover:bg-black hover:text-white rounded-none font-mono text-xs uppercase tracking-wider" style={{color: '#000000', backgroundColor: '#6ff000', borderRadius: '1000px', fontWeight: '700', borderColor: '#ffffff', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif'}}>
               Start publishing
             </Button>
           </div>
