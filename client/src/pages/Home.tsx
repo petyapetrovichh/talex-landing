@@ -181,7 +181,7 @@ export default function Home() {
           <div className="space-y-8">
             <h1 className="text-5xl md:text-7xl font-display font-bold leading-[1.1] tracking-tight text-black" style={{fontSize: '50px', width: '800px', marginLeft: '-100px', marginTop: '-250px', marginBottom: '25px'}}>
               TaleX is where<br />
-              <span className="text-primary" style={{color: '#6ff000'}}>great content</span> <span className="text-accent" style={{color: '#6ff000'}}>pays off</span><br />
+              <span className="text-primary" style={{color: '#000000'}}>great content</span> <span className="text-accent" style={{color: '#000000'}}>pays off</span><br />
               both creators and supporters
             </h1>
             <p className="text-lg md:text-xl text-gray-600 max-w-xl leading-relaxed" style={{marginBottom: '25px', marginLeft: '-100px', width: '598px'}}>
