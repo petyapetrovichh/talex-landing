@@ -24,7 +24,7 @@ export default function Home() {
       <nav className={`fixed top-0 left-0 right-0 z-50 border-b border-black/5 transition-all duration-300 ${
         isScrolled ? 'bg-white/95 backdrop-blur-md' : 'bg-white/90 backdrop-blur-md'
       }`}>
-        <div className="container mx-auto flex items-center justify-between h-20">
+        <div className="container mx-auto flex items-center justify-between h-20" style={{paddingLeft: '25px'}}>
           {/* Left: Logo */}
           <div className="flex items-center">
             <a href="#" className="block">
@@ -42,7 +42,7 @@ export default function Home() {
             >
               <button 
                 className="flex items-center gap-1 hover:text-black transition-colors text-black" 
-                style={{fontSize: '17px', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif', marginLeft: '-22px'}}
+                style={{fontSize: '17px', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif', marginLeft: '-341px'}}
               >
                 Explore
                 <ChevronDown className="w-4 h-4" />
@@ -64,7 +64,7 @@ export default function Home() {
             >
               <button 
                 className="flex items-center gap-1 hover:text-black transition-colors text-black" 
-                style={{fontSize: '17px', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif', marginLeft: '20px'}}
+                style={{fontSize: '17px', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif', marginLeft: '-252px'}}
               >
                 Company
                 <ChevronDown className="w-4 h-4" />
@@ -86,7 +86,7 @@ export default function Home() {
             >
               <button 
                 className="flex items-center gap-1 hover:text-black transition-colors text-black" 
-                style={{fontSize: '17px', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif', marginLeft: '17px'}}
+                style={{fontSize: '17px', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif', marginLeft: '-153px'}}
               >
                 Community
                 <ChevronDown className="w-4 h-4" />
@@ -131,7 +131,7 @@ export default function Home() {
                 borderRadius: '1000px', 
                 fontWeight: '700', 
                 borderColor: '#ffffff', 
-                fontFamily: '"Alibaba PuHuiTi 3.0", sans-serif'
+                fontFamily: '"Alibaba PuHuiTi 3.0", sans-serif', marginRight: '-275px'
               }}
               onClick={() => {
                 setButtonClicked(true);
