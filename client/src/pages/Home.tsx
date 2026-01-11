@@ -179,7 +179,7 @@ export default function Home() {
       <section className="pt-32 pb-20 md:pt-48 md:pb-32 border-b border-black/5">
         <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <h1 className="text-5xl md:text-7xl font-display font-bold leading-[1.1] tracking-tight text-black" style={{fontSize: '50px', width: '800px', marginLeft: '-100px', marginTop: '-56px', marginBottom: '25px', fontFamily: '"Abril Fatface", serif', fontWeight: '400'}}>
+            <h1 className="text-5xl md:text-7xl font-display font-bold leading-[1.1] tracking-tight text-black" style={{fontSize: '50px', width: '800px', marginLeft: '-100px', marginTop: '-56px', marginBottom: '25px', fontFamily: '"Abril Fatface", serif', fontWeight: '300'}}>
               TaleX is where<br />
               <span className="text-primary" style={{color: '#6FF000'}}>great content</span> <span className="text-accent" style={{color: '#000000'}}>pays off</span><br />
               both creators and supporters
