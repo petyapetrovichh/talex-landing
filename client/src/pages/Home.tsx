@@ -28,7 +28,7 @@ export default function Home() {
           {/* Left: Logo */}
           <div className="flex items-center">
             <a href="#" className="block">
-              <img src="/images/logo.png" alt="TaleX Logo" className="h-8 w-auto" style={{height: '36px'}} />
+              <img src="/images/logo.png" alt="TaleX Logo" className="h-8 w-auto" style={{height: '36px', marginLeft: '-117px'}} />
             </a>
           </div>
 
@@ -131,7 +131,7 @@ export default function Home() {
                 borderRadius: '1000px', 
                 fontWeight: '700', 
                 borderColor: '#ffffff', 
-                fontFamily: '"Alibaba PuHuiTi 3.0", sans-serif', marginRight: '-275px'
+                fontFamily: '"Alibaba PuHuiTi 3.0", sans-serif', marginRight: '-144px'
               }}
               onClick={() => {
                 setButtonClicked(true);
