@@ -7,6 +7,8 @@ export default function Home() {
   const [communityOpen, setCommunityOpen] = useState(false);
   const [companyOpen, setCompanyOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [buttonHovered, setButtonHovered] = useState(false);
+  const [buttonClicked, setButtonClicked] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,12 +35,14 @@ export default function Home() {
           {/* Center: Navigation */}
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-500 absolute left-1/2 -translate-x-1/2" style={{marginLeft: '-102px'}}>
             {/* Explore Dropdown */}
-            <div className="relative group">
+            <div 
+              className="relative group"
+              onMouseEnter={() => setExploreOpen(true)}
+              onMouseLeave={() => setExploreOpen(false)}
+            >
               <button 
                 className="flex items-center gap-1 hover:text-black transition-colors" 
                 style={{fontSize: '17px', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif', marginLeft: '-22px'}}
-                onMouseEnter={() => setExploreOpen(true)}
-                onMouseLeave={() => setExploreOpen(false)}
               >
                 Explore
                 <ChevronDown className="w-4 h-4" />
@@ -53,12 +57,14 @@ export default function Home() {
             </div>
 
             {/* Company Dropdown */}
-            <div className="relative group">
+            <div 
+              className="relative group"
+              onMouseEnter={() => setCompanyOpen(true)}
+              onMouseLeave={() => setCompanyOpen(false)}
+            >
               <button 
                 className="flex items-center gap-1 hover:text-black transition-colors" 
                 style={{fontSize: '17px', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif', marginLeft: '20px'}}
-                onMouseEnter={() => setCompanyOpen(true)}
-                onMouseLeave={() => setCompanyOpen(false)}
               >
                 Company
                 <ChevronDown className="w-4 h-4" />
@@ -73,12 +79,14 @@ export default function Home() {
             </div>
 
             {/* Community Dropdown */}
-            <div className="relative group">
+            <div 
+              className="relative group"
+              onMouseEnter={() => setCommunityOpen(true)}
+              onMouseLeave={() => setCommunityOpen(false)}
+            >
               <button 
                 className="flex items-center gap-1 hover:text-black transition-colors" 
                 style={{fontSize: '17px', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif', marginLeft: '17px'}}
-                onMouseEnter={() => setCommunityOpen(true)}
-                onMouseLeave={() => setCommunityOpen(false)}
               >
                 Community
                 <ChevronDown className="w-4 h-4" />
@@ -118,25 +126,23 @@ export default function Home() {
               variant="outline" 
               className="hidden md:flex border-black/20 rounded-none font-mono text-xs uppercase tracking-wider transition-all duration-200" 
               style={{
-                color: '#000000', 
-                backgroundColor: '#6ff000', 
+                color: buttonHovered || buttonClicked ? '#ffffff' : '#000000', 
+                backgroundColor: buttonHovered || buttonClicked ? '#000000' : '#6ff000', 
                 borderRadius: '1000px', 
                 fontWeight: '700', 
                 borderColor: '#ffffff', 
                 fontFamily: '"Alibaba PuHuiTi 3.0", sans-serif'
               }}
-              onClick={() => window.location.href = 'https://www.talex.world/profile'}
-              onMouseDown={(e) => {
-                e.currentTarget.style.backgroundColor = '#000000';
-                e.currentTarget.style.color = '#ffffff';
+              onClick={() => {
+                setButtonClicked(true);
+                window.location.href = 'https://www.talex.world/profile';
               }}
-              onMouseUp={(e) => {
-                e.currentTarget.style.backgroundColor = '#6ff000';
-                e.currentTarget.style.color = '#000000';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = '#6ff000';
-                e.currentTarget.style.color = '#000000';
+              onMouseEnter={() => setButtonHovered(true)}
+              onMouseLeave={() => {
+                setButtonHovered(false);
+                if (!buttonClicked) {
+                  setButtonClicked(false);
+                }
               }}
             >
               Start publishing
