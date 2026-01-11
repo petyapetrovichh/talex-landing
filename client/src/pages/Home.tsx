@@ -83,7 +83,7 @@ export default function Home() {
             >
               <button 
                 className="flex items-center gap-1 hover:text-black transition-colors text-black" 
-                style={{fontSize: '17px', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif'}}
+                style={{fontSize: '17px', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif', marginLeft: '13px'}}
               >
                 Company
                 <ChevronDown className="w-4 h-4" />
@@ -105,7 +105,7 @@ export default function Home() {
             >
               <button 
                 className="flex items-center gap-1 hover:text-black transition-colors text-black" 
-                style={{fontSize: '17px', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif'}}
+                style={{fontSize: '17px', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif', marginLeft: '15px'}}
               >
                 Community
                 <ChevronDown className="w-4 h-4" />
