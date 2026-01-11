@@ -184,7 +184,7 @@ export default function Home() {
               <span className="text-primary" style={{color: '#6FF000'}}>great content</span> <span className="text-accent" style={{color: '#000000'}}>pays off</span><br />
               both creators and supporters
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 max-w-xl leading-relaxed" style={{marginBottom: '25px', marginLeft: '-100px', width: '598px'}}>
+            <p className="text-lg md:text-xl text-gray-600 max-w-xl leading-relaxed" style={{marginBottom: '25px', marginLeft: '-100px', width: '750px'}}>
               TaleX is a new content app where creators and fans grow together. Here, supporting content means more than donating — it means predicting its future and helping it spread. Every Tale, whether it's an article, book, podcast, or video, has X ways to travel farther, faster, and reward those who believe in it.
             </p>
             <Button 
