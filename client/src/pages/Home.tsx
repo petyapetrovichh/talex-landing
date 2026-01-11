@@ -1,16 +1,27 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play, User, Globe, ShieldCheck, Zap, ChevronDown, Search } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Home() {
   const [exploreOpen, setExploreOpen] = useState(false);
   const [communityOpen, setCommunityOpen] = useState(false);
   const [companyOpen, setCompanyOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <div className="min-h-screen bg-white text-black selection:bg-primary selection:text-white font-sans">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-black/5">
+      <nav className={`fixed top-0 left-0 right-0 z-50 border-b border-black/5 transition-all duration-300 ${
+        isScrolled ? 'bg-white/95 backdrop-blur-md' : 'bg-white/90 backdrop-blur-md'
+      }`}>
         <div className="container mx-auto flex items-center justify-between h-20">
           {/* Left: Logo */}
           <div className="flex items-center">
@@ -20,12 +31,12 @@ export default function Home() {
           </div>
 
           {/* Center: Navigation */}
-          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-500 absolute left-1/2 -translate-x-1/2">
+          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-500 absolute left-1/2 -translate-x-1/2" style={{marginLeft: '-102px'}}>
             {/* Explore Dropdown */}
             <div className="relative group">
               <button 
                 className="flex items-center gap-1 hover:text-black transition-colors" 
-                style={{fontSize: '17px', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif'}}
+                style={{fontSize: '17px', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif', marginLeft: '-22px'}}
                 onMouseEnter={() => setExploreOpen(true)}
                 onMouseLeave={() => setExploreOpen(false)}
               >
@@ -45,7 +56,7 @@ export default function Home() {
             <div className="relative group">
               <button 
                 className="flex items-center gap-1 hover:text-black transition-colors" 
-                style={{fontSize: '17px', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif'}}
+                style={{fontSize: '17px', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif', marginLeft: '20px'}}
                 onMouseEnter={() => setCompanyOpen(true)}
                 onMouseLeave={() => setCompanyOpen(false)}
               >
@@ -99,11 +110,35 @@ export default function Home() {
                   type="text" 
                   placeholder="Search TaleX..." 
                   className="bg-transparent border-b border-gray-300 focus:border-primary outline-none w-48 py-1 text-black placeholder-gray-400 transition-all text-sm pl-8" 
-                  style={{backgroundColor: '#f6f6f6', borderRadius: '1000px', borderColor: '#dddddd', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif'}}
+                  style={{backgroundColor: '#f6f6f6', borderRadius: '1000px', borderColor: '#dddddd', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif', height: '36px'}}
                 />
               </div>
             </div>
-            <Button variant="outline" className="hidden md:flex border-black/20 hover:bg-black hover:text-white rounded-none font-mono text-xs uppercase tracking-wider" style={{color: '#000000', backgroundColor: '#6ff000', borderRadius: '1000px', fontWeight: '700', borderColor: '#ffffff', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif'}}>
+            <Button 
+              variant="outline" 
+              className="hidden md:flex border-black/20 rounded-none font-mono text-xs uppercase tracking-wider transition-all duration-200" 
+              style={{
+                color: '#000000', 
+                backgroundColor: '#6ff000', 
+                borderRadius: '1000px', 
+                fontWeight: '700', 
+                borderColor: '#ffffff', 
+                fontFamily: '"Alibaba PuHuiTi 3.0", sans-serif'
+              }}
+              onClick={() => window.location.href = 'https://www.talex.world/profile'}
+              onMouseDown={(e) => {
+                e.currentTarget.style.backgroundColor = '#000000';
+                e.currentTarget.style.color = '#ffffff';
+              }}
+              onMouseUp={(e) => {
+                e.currentTarget.style.backgroundColor = '#6ff000';
+                e.currentTarget.style.color = '#000000';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = '#6ff000';
+                e.currentTarget.style.color = '#000000';
+              }}
+            >
               Start publishing
             </Button>
           </div>
