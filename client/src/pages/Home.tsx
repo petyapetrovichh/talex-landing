@@ -52,19 +52,19 @@ export default function Home() {
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-black absolute left-1/2 -translate-x-1/2" style={{marginLeft: '-102px'}}>
             {/* Explore Dropdown */}
             <div 
-              className="relative group"
+              className="relative"
               onMouseEnter={() => setExploreOpen(true)}
               onMouseLeave={() => setExploreOpen(false)}
             >
               <button 
                 className="flex items-center gap-1 hover:text-black transition-colors text-black" 
-                style={{fontSize: '17px', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif', marginLeft: '-341px'}}
+                style={{fontSize: '17px', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif'}}
               >
                 Explore
                 <ChevronDown className="w-4 h-4" />
               </button>
               {exploreOpen && (
-                <div className="absolute top-full left-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg p-3 min-w-max z-50" style={{left: '-22px', marginTop: '-10px'}}>
+                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg p-3 min-w-max z-50">
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">TaleX App</a>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Our Model</a>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Featured</a>
@@ -74,19 +74,19 @@ export default function Home() {
 
             {/* Company Dropdown */}
             <div 
-              className="relative group"
+              className="relative"
               onMouseEnter={() => setCompanyOpen(true)}
               onMouseLeave={() => setCompanyOpen(false)}
             >
               <button 
                 className="flex items-center gap-1 hover:text-black transition-colors text-black" 
-                style={{fontSize: '17px', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif', marginLeft: '-252px'}}
+                style={{fontSize: '17px', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif'}}
               >
                 Company
                 <ChevronDown className="w-4 h-4" />
               </button>
               {companyOpen && (
-                <div className="absolute top-full left-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg p-3 min-w-max z-50" style={{left: '20px'}}>
+                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg p-3 min-w-max z-50">
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">About</a>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Help</a>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Contact</a>
@@ -96,19 +96,19 @@ export default function Home() {
 
             {/* Community Dropdown */}
             <div 
-              className="relative group"
+              className="relative"
               onMouseEnter={() => setCommunityOpen(true)}
               onMouseLeave={() => setCommunityOpen(false)}
             >
               <button 
                 className="flex items-center gap-1 hover:text-black transition-colors text-black" 
-                style={{fontSize: '17px', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif', marginLeft: '-153px'}}
+                style={{fontSize: '17px', fontFamily: 'Alibaba PuHuiTi 3.0, sans-serif'}}
               >
                 Community
                 <ChevronDown className="w-4 h-4" />
               </button>
               {communityOpen && (
-                <div className="absolute top-full left-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg p-3 min-w-max z-50" style={{left: '17px'}}>
+                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg p-3 min-w-max z-50">
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">X</a>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Telegram</a>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Discord</a>
