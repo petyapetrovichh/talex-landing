@@ -90,8 +90,8 @@ export default function Home() {
               </button>
               {companyOpen && (
                 <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg p-3 min-w-max z-50" style={{marginTop: '0px'}}>
-                  <a href="https://www.talex.world/" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">About</a>
-                  <a href="https://docs.talex.world/" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Help</a>
+                  <a href="https://docs.talex.world/" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">About</a>
+                  <a href="https://t.me/talex_chain_community" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Help</a>
                   <a href="https://t.me/talex_chain_community" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Contact</a>
                 </div>
               )}
