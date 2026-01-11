@@ -2,6 +2,16 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Play, User, Globe, ShieldCheck, Zap, ChevronDown, Search } from "lucide-react";
 import { useState, useEffect } from "react";
 
+// Spring animation for button click
+const springStyle = `
+  @keyframes spring {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.95); }
+    100% { transform: scale(1); }
+  }
+  .spring-button { animation: spring 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); }
+`;
+
 export default function Home() {
   const [exploreOpen, setExploreOpen] = useState(false);
   const [communityOpen, setCommunityOpen] = useState(false);
@@ -9,6 +19,7 @@ export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [buttonHovered, setButtonHovered] = useState(false);
   const [buttonClicked, setButtonClicked] = useState(false);
+  const [buttonSpring, setButtonSpring] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -127,9 +138,10 @@ export default function Home() {
                 />
               </div>
             </div>
+            <style>{springStyle}</style>
             <Button 
               variant="outline" 
-              className="hidden md:flex border-black/20 rounded-none font-mono text-xs uppercase tracking-wider transition-all duration-200" 
+              className={`hidden md:flex border-black/20 rounded-none font-mono text-xs uppercase tracking-wider transition-all duration-200 ${buttonSpring ? 'spring-button' : ''}`}
               style={{
                 color: buttonHovered || buttonClicked ? '#ffffff' : '#000000', 
                 backgroundColor: buttonHovered || buttonClicked ? '#000000' : '#6ff000', 
@@ -140,7 +152,11 @@ export default function Home() {
               }}
               onClick={() => {
                 setButtonClicked(true);
-                window.location.href = 'https://www.talex.world/profile';
+                setButtonSpring(true);
+                setTimeout(() => setButtonSpring(false), 400);
+                setTimeout(() => {
+                  window.location.href = 'https://www.talex.world/profile';
+                }, 200);
               }}
               onMouseEnter={() => setButtonHovered(true)}
               onMouseLeave={() => {
@@ -162,7 +178,7 @@ export default function Home() {
           <div className="space-y-8">
             <h1 className="text-5xl md:text-7xl font-display font-bold leading-[1.1] tracking-tight text-black" style={{fontSize: '50px', width: '800px', marginLeft: '-100px', marginTop: '-250px', marginBottom: '25px'}}>
               TaleX is where<br />
-              <span className="text-primary" style={{color: '#000000'}}>great content</span> <span className="text-primary" style={{color: '#000000'}}>pays off</span><br />
+              <span className="text-primary" style={{color: '#6ff000'}}>great content</span> <span className="text-primary" style={{color: '#6ff000'}}>pays off</span><br />
               both creators and supporters
             </h1>
             <p className="text-lg md:text-xl text-gray-600 max-w-xl leading-relaxed" style={{marginBottom: '25px', marginLeft: '-100px', width: '598px'}}>
