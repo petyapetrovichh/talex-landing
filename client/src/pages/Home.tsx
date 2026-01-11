@@ -24,15 +24,14 @@ export default function Home() {
       <nav className={`fixed top-0 left-0 right-0 z-50 border-b border-black/5 transition-all duration-300 ${
         isScrolled ? 'bg-white/95 backdrop-blur-md' : 'bg-white/90 backdrop-blur-md'
       }`}>
+        {/* Logo - Independent positioning */}
+        <a href="#" className="block absolute left-0 top-1/2 -translate-y-1/2" style={{paddingLeft: '25px'}}>
+          <img src="/images/logo.png" alt="TaleX Logo" className="h-8 w-auto" style={{height: '36px'}} />
+        </a>
+        
         <div className="container mx-auto flex items-center justify-between h-20" style={{paddingLeft: '25px'}}>
-          {/* Left: Logo */}
-          <div className="flex items-center">
-            <a href="#" className="block">
-              <img src="/images/logo.png" alt="TaleX Logo" className="h-8 w-auto" style={{height: '36px'}} />
-            </a>
-          </div>
 
-          {/* Center: Navigation */}
+          {/* Center: Navigation - Placeholder for flex layout */}
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-black absolute left-1/2 -translate-x-1/2" style={{marginLeft: '-102px'}}>
             {/* Explore Dropdown */}
             <div 
