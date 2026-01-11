@@ -7,23 +7,28 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-black/5">
         <div className="container mx-auto flex items-center justify-between h-20">
-          <div className="flex items-center gap-12">
+          {/* Left: Logo */}
+          <div className="flex items-center">
             <a href="#" className="block">
               <img src="/images/logo.png" alt="TaleX Logo" className="h-8 w-auto" />
             </a>
-            <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-500">
-              <a href="#" className="hover:text-black transition-colors">Explore</a>
-              <a href="#" className="hover:text-black transition-colors">Community</a>
-              <div className="relative group">
-                <input 
-                  type="text" 
-                  placeholder="Search TaleX..." 
-                  className="bg-transparent border-b border-gray-300 focus:border-primary outline-none w-48 py-1 text-black placeholder-gray-400 transition-all"
-                />
-              </div>
-            </div>
           </div>
-          <div className="flex items-center gap-4">
+
+          {/* Center: Navigation */}
+          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-500 absolute left-1/2 -translate-x-1/2">
+            <a href="#" className="hover:text-black transition-colors">Explore</a>
+            <a href="#" className="hover:text-black transition-colors">Community</a>
+          </div>
+
+          {/* Right: Search & Action */}
+          <div className="flex items-center gap-6">
+            <div className="hidden md:block relative group">
+              <input 
+                type="text" 
+                placeholder="Search TaleX..." 
+                className="bg-transparent border-b border-gray-300 focus:border-primary outline-none w-48 py-1 text-black placeholder-gray-400 transition-all text-sm"
+              />
+            </div>
             <Button variant="outline" className="hidden md:flex border-black/20 hover:bg-black hover:text-white rounded-none font-mono text-xs uppercase tracking-wider">
               Start publishing
             </Button>
