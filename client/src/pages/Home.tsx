@@ -155,15 +155,15 @@ export default function Home() {
       <section className="pt-32 pb-20 md:pt-48 md:pb-32 border-b border-black/5">
         <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <h1 className="text-5xl md:text-7xl font-display font-bold leading-[1.1] tracking-tight text-black">
+            <h1 className="text-5xl md:text-7xl font-display font-bold leading-[1.1] tracking-tight text-black" style={{fontSize: '50px', width: '800px', marginLeft: '-100px', marginTop: '-250px', marginBottom: '25px'}}>
               TaleX is where<br />
               <span className="text-primary" style={{color: '#6ff000'}}>great content pays off</span><br />
               both creators and supporters
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 max-w-xl leading-relaxed">
+            <p className="text-lg md:text-xl text-gray-600 max-w-xl leading-relaxed" style={{marginBottom: '25px', marginLeft: '-100px'}}>
               TaleX is a new content app where creators and fans grow together. Here, supporting content means more than donating — it means predicting its future and helping it spread.
             </p>
-            <Button className="bg-primary text-white hover:bg-black rounded-none h-14 px-8 text-lg font-bold uppercase tracking-wide">
+            <Button className="bg-primary text-white hover:bg-black rounded-none h-14 px-8 text-lg font-bold uppercase tracking-wide" style={{marginLeft: '-100px', color: '#000000', backgroundColor: '#6ff000', borderRadius: '1000px'}}>
               Tell a Tale
             </Button>
           </div>
