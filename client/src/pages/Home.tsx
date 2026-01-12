@@ -179,12 +179,12 @@ export default function Home() {
       <section className="pt-32 pb-20 md:pt-48 md:pb-32 border-b border-black/5" style={{backgroundImage: 'url(/images/hero-background.png)', backgroundSize: 'cover', backgroundPosition: 'center right', backgroundAttachment: 'scroll'}}>
         <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <h1 className="text-5xl md:text-7xl font-display font-bold leading-[1.1] tracking-tight text-black" style={{fontSize: '45px', width: '800px', marginLeft: '-100px', marginTop: '-56px', marginBottom: '25px', fontFamily: '"Abril Fatface", serif', fontWeight: '300'}}>
+            <h1 className="text-5xl md:text-7xl font-display font-bold leading-[1.1] tracking-tight text-black" style={{fontSize: '45px', maxWidth: '90%', marginTop: '-56px', marginBottom: '25px', fontFamily: '"Abril Fatface", serif', fontWeight: '300'}}>
               TaleX is where<br />
               <span className="text-primary" style={{color: '#6FF000'}}>great content</span> <span className="text-accent" style={{color: '#000000'}}>pays off</span><br />
               both creators and supporters
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 max-w-xl leading-relaxed" style={{marginBottom: '25px', marginLeft: '-100px', width: '750px'}}>
+            <p className="text-lg md:text-xl text-gray-600 max-w-xl leading-relaxed" style={{marginBottom: '25px', maxWidth: '90%'}}>
               TaleX is a new content app where creators and fans grow together. Here, supporting content means more than donating — it means predicting its future and helping it spread. Every Tale, whether it's an article, book, podcast, or video, has X ways to travel farther, faster, and reward those who believe in it.
             </p>
             <Button 
