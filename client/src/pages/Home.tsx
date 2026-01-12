@@ -49,7 +49,7 @@ export default function Home() {
         </a>
         
         <div className="container mx-auto flex items-center justify-between h-20" style={{paddingLeft: '25px'}}>
-          {/* Left: Hamburger Menu Button for Mobile */}
+          {/* Left: Hamburger Menu Button for Mobile Only */}
           <button
             className="md:hidden"
             onClick={() => setMobileMenuExpanded(!mobileMenuExpanded)}
