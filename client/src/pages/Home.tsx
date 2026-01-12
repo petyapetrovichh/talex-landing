@@ -277,7 +277,7 @@ export default function Home() {
             height: '309px',
             width: '200px',
             zIndex: 10,
-            marginRight: '150px',
+            marginRight: '163px',
             marginTop: '-120px'
           }}
         />
@@ -294,8 +294,8 @@ export default function Home() {
             height: '273px',
             width: '200px',
             zIndex: 10,
-            marginRight: '150px',
-            marginTop: '221px'
+            marginRight: '163px',
+            marginTop: '225px'
           }}
         />
       </section>
