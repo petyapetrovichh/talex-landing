@@ -125,7 +125,7 @@ export default function Home() {
             className={`hidden md:inline-flex ml-auto ${buttonSpring ? 'spring-button' : ''}`}
             style={{
               backgroundColor: buttonHovered || buttonClicked ? '#000000' : '#6ff000',
-              color: '#000000',
+              color: buttonHovered || buttonClicked ? '#ffffff' : '#000000',
               height: '44px',
               paddingLeft: '24px',
               paddingRight: '24px',
