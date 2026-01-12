@@ -295,7 +295,7 @@ export default function Home() {
             width: '200px',
             zIndex: 10,
             marginRight: '163px',
-            marginTop: '225px'
+            marginTop: '228px'
           }}
         />
       </section>
