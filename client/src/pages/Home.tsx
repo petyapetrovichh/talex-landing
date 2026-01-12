@@ -217,13 +217,14 @@ export default function Home() {
           alt="Support & Earn Interface" 
           className="hidden md:block absolute" 
           style={{
-            left: '5%',
+            right: '50%',
             top: '50%',
             transform: 'translateY(-50%)',
             height: '600px',
             width: 'auto',
             maxWidth: '35%',
-            zIndex: 10
+            zIndex: 10,
+            marginRight: '20px'
           }}
         />
         
