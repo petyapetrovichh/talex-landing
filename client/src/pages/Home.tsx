@@ -160,7 +160,7 @@ export default function Home() {
       <section className="pt-32 pb-20 md:pt-48 md:pb-32 border-b border-black/5 relative" style={{backgroundImage: 'url(/images/hero-background.png)', backgroundSize: '110% 110%', backgroundPosition: 'center', backgroundAttachment: 'scroll', minHeight: '100vh'}}>
         {/* Mobile Hero Content */}
         <div className="md:hidden container mx-auto px-4 space-y-6 relative z-20">
-          <h1 className="text-3xl font-bold leading-tight text-black" style={{fontFamily: '"Abril Fatface", serif', fontWeight: '700', fontSize: '35px'}}>
+          <h1 className="text-3xl font-bold leading-tight text-black" style={{fontFamily: '"Abril Fatface", serif', fontWeight: '800', fontSize: '33px'}}>
             TaleX is where<br />
             <span style={{color: '#6FF000'}}>great content</span> <span style={{color: '#000000'}}>pays off</span><br />
             both creators and supporters
