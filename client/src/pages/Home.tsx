@@ -170,7 +170,7 @@ export default function Home() {
           </p>
           <Button 
             className="bg-primary text-black rounded-full h-12 px-6 text-base font-bold uppercase tracking-wide w-full"
-            style={{backgroundColor: '#6ff000', color: '#000000'}}
+            style={{backgroundColor: '#6ff000', color: '#000000', paddingRight: '76px', paddingLeft: '73px', width: '15px'}}
             onClick={() => {
               setButtonTaleClicked(true);
               setButtonTaleSpring(true);
