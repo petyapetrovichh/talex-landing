@@ -243,7 +243,7 @@ export default function Home() {
             maxWidth: '35%',
             zIndex: 10,
             marginRight: '-178px',
-            marginTop: '250px'
+            marginTop: '225px'
           }}
         />
         
