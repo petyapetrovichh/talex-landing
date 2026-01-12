@@ -291,11 +291,11 @@ export default function Home() {
             right: '-8%',
             top: '50%',
             transform: 'translateY(-50%)',
-            height: '457px',
+            height: '287px',
             width: '210px',
             zIndex: 10,
             marginRight: '150px',
-            marginTop: '260px'
+            marginTop: '240px'
           }}
         />
       </section>
