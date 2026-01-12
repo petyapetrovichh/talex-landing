@@ -261,7 +261,7 @@ export default function Home() {
             maxWidth: '35%',
             zIndex: 10,
             marginTop: '50px',
-            marginRight: '160px'
+            marginRight: '166px'
           }}
         />
         
