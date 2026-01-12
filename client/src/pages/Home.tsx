@@ -220,11 +220,12 @@ export default function Home() {
             right: '50%',
             top: '50%',
             transform: 'translateY(-50%)',
-            height: '600px',
+            height: '384.84px',
             width: 'auto',
             maxWidth: '35%',
             zIndex: 10,
-            marginRight: '20px'
+            marginRight: '-205px',
+            marginTop: '-109px'
           }}
         />
         
