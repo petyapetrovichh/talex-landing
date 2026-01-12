@@ -23,6 +23,10 @@ export default function Home() {
   const [buttonTaleHovered, setButtonTaleHovered] = useState(false);
   const [buttonTaleClicked, setButtonTaleClicked] = useState(false);
   const [buttonTaleSpring, setButtonTaleSpring] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileExploreOpen, setMobileExploreOpen] = useState(false);
+  const [mobileCompanyOpen, setMobileCompanyOpen] = useState(false);
+  const [mobileCommunityOpen, setMobileCommunityOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,7 +48,18 @@ export default function Home() {
         </a>
         
         <div className="container mx-auto flex items-center justify-between h-20" style={{paddingLeft: '25px'}}>
-          {/* Left: Logo Placeholder (empty for flex layout) */}
+          {/* Left: Hamburger Menu for Mobile */}
+          <button 
+            className="md:hidden flex flex-col gap-1.5 p-2"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            style={{height: '20px', justifyContent: 'center'}}
+          >
+            <div className="w-6 h-0.5 bg-black transition-all"></div>
+            <div className="w-6 h-0.5 bg-black transition-all"></div>
+            <div className="w-6 h-0.5 bg-black transition-all"></div>
+          </button>
+
+          {/* Logo Placeholder (empty for flex layout) */}
           <div className="flex items-center invisible">
             <a href="#" className="block">
               <img src="/images/logo.png" alt="TaleX Logo" className="h-8 w-auto" style={{height: '36px'}} />
@@ -119,6 +134,67 @@ export default function Home() {
               )}
             </div>
           </div>
+
+          {/* Mobile Menu Dropdown */}
+          {mobileMenuOpen && (
+            <div className="md:hidden fixed top-20 left-0 right-0 bg-white border-b border-gray-200 shadow-lg z-40">
+              <div className="p-4 space-y-2">
+                {/* Explore Section */}
+                <div>
+                  <button 
+                    onClick={() => setMobileExploreOpen(!mobileExploreOpen)}
+                    className="w-full text-left px-4 py-2 font-semibold text-black flex items-center justify-between hover:bg-gray-50 transition-colors"
+                  >
+                    Explore
+                    <ChevronDown className={`w-4 h-4 transition-transform ${mobileExploreOpen ? 'rotate-180' : ''}`} />
+                  </button>
+                  {mobileExploreOpen && (
+                    <div className="pl-4 space-y-1">
+                      <a href="https://www.talex.world/" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 transition-colors text-sm">TaleX App</a>
+                      <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 transition-colors text-sm">Our Model</a>
+                      <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 transition-colors text-sm">Featured</a>
+                    </div>
+                  )}
+                </div>
+
+                {/* Company Section */}
+                <div>
+                  <button 
+                    onClick={() => setMobileCompanyOpen(!mobileCompanyOpen)}
+                    className="w-full text-left px-4 py-2 font-semibold text-black flex items-center justify-between hover:bg-gray-50 transition-colors"
+                  >
+                    Company
+                    <ChevronDown className={`w-4 h-4 transition-transform ${mobileCompanyOpen ? 'rotate-180' : ''}`} />
+                  </button>
+                  {mobileCompanyOpen && (
+                    <div className="pl-4 space-y-1">
+                      <a href="https://docs.talex.world/" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 transition-colors text-sm">About</a>
+                      <a href="https://t.me/talex_chain_community" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 transition-colors text-sm">Help</a>
+                      <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 transition-colors text-sm">Contact</a>
+                    </div>
+                  )}
+                </div>
+
+                {/* Community Section */}
+                <div>
+                  <button 
+                    onClick={() => setMobileCommunityOpen(!mobileCommunityOpen)}
+                    className="w-full text-left px-4 py-2 font-semibold text-black flex items-center justify-between hover:bg-gray-50 transition-colors"
+                  >
+                    Community
+                    <ChevronDown className={`w-4 h-4 transition-transform ${mobileCommunityOpen ? 'rotate-180' : ''}`} />
+                  </button>
+                  {mobileCommunityOpen && (
+                    <div className="pl-4 space-y-1">
+                      <a href="https://t.me/talex_chain_community" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 transition-colors text-sm">Telegram</a>
+                      <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 transition-colors text-sm">Discord</a>
+                      <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 transition-colors text-sm">Twitter</a>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          )}
 
           {/* Right: CTA Button */}
           <Button 
