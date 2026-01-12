@@ -291,7 +291,7 @@ export default function Home() {
             right: '-8%',
             top: '50%',
             transform: 'translateY(-50%)',
-            height: '325px',
+            height: '457px',
             width: '210px',
             zIndex: 10,
             marginRight: '150px',
