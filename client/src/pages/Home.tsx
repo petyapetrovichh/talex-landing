@@ -169,8 +169,15 @@ export default function Home() {
             TaleX is a new content app where creators and fans grow together. Here, supporting content means more than donating — it means predicting its future and helping it spread. Every Tale, whether it's an article, book, podcast, or video, has X ways to travel farther, faster, and reward those who believe in it.
           </p>
           <Button 
-            className="bg-primary text-black rounded-full h-12 px-6 text-base font-bold uppercase tracking-wide w-full"
-            style={{backgroundColor: '#6ff000', color: '#000000', paddingRight: '76px', paddingLeft: '73px', width: '15px'}}
+            className={`bg-primary text-black rounded-full h-12 px-6 text-base font-bold uppercase tracking-wide w-full ${buttonTaleSpring ? 'spring-button' : ''}`}
+            style={{
+              backgroundColor: buttonTaleClicked ? '#000000' : '#6ff000',
+              color: buttonTaleClicked ? '#ffffff' : '#000000',
+              paddingRight: '76px',
+              paddingLeft: '73px',
+              width: '15px',
+              transition: 'all 0.2s ease'
+            }}
             onClick={() => {
               setButtonTaleClicked(true);
               setButtonTaleSpring(true);
