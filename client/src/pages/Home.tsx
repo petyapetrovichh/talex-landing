@@ -151,7 +151,7 @@ export default function Home() {
                 borderRadius: '1000px', 
                 fontWeight: '700', 
                 borderColor: '#ffffff', 
-                fontFamily: '"Alibaba PuHuiTi 3.0", sans-serif', marginRight: '-144px'
+                fontFamily: '"Alibaba PuHuiTi 3.0", sans-serif'
               }}
               onClick={() => {
                 setButtonClicked(true);
