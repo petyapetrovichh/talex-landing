@@ -1,3 +1,4 @@
+import { useAuth } from "@/_core/hooks/useAuth";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play, User, Globe, ShieldCheck, Zap, ChevronDown, Search } from "lucide-react";
 import { useState, useEffect } from "react";
@@ -26,6 +27,10 @@ const springStyle = `
 `;
 
 export default function Home() {
+  // The userAuth hooks provides authentication state
+  // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
+  let { user, loading, error, isAuthenticated, logout } = useAuth();
+
   const [exploreOpen, setExploreOpen] = useState(false);
   const [communityOpen, setCommunityOpen] = useState(false);
   const [companyOpen, setCompanyOpen] = useState(false);
