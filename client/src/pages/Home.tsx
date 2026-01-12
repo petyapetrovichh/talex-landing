@@ -274,11 +274,11 @@ export default function Home() {
             right: '-8%',
             top: '50%',
             transform: 'translateY(-50%)',
-            height: '325px',
-            width: '210px',
+            height: '309px',
+            width: '200px',
             zIndex: 10,
             marginRight: '150px',
-            marginTop: '-100px'
+            marginTop: '-120px'
           }}
         />
         
@@ -291,11 +291,11 @@ export default function Home() {
             right: '-8%',
             top: '50%',
             transform: 'translateY(-50%)',
-            height: '287px',
-            width: '210px',
+            height: '273px',
+            width: '200px',
             zIndex: 10,
             marginRight: '150px',
-            marginTop: '240px'
+            marginTop: '221px'
           }}
         />
       </section>
