@@ -224,8 +224,8 @@ export default function Home() {
             width: 'auto',
             maxWidth: '35%',
             zIndex: 10,
-            marginTop: '40px',
-            marginRight: '150px'
+            marginTop: '50px',
+            marginRight: '160px'
           }}
         />
       </section>
