@@ -176,7 +176,7 @@ export default function Home() {
               setButtonTaleSpring(true);
               setTimeout(() => setButtonTaleSpring(false), 400);
               setTimeout(() => {
-                window.location.href = 'https://www.talex.world/profile';
+                window.location.href = 'https://www.talex.world/publish';
               }, 200);
             }}
           >
