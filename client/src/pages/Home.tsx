@@ -238,12 +238,12 @@ export default function Home() {
             right: '50%',
             top: '50%',
             transform: 'translateY(-50%)',
-            height: '349.85px',
+            height: '162px',
             width: '200px',
             maxWidth: '35%',
             zIndex: 10,
             marginRight: '-178px',
-            marginTop: '220px'
+            marginTop: '250px'
           }}
         />
         
