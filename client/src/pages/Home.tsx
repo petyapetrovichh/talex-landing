@@ -274,9 +274,11 @@ export default function Home() {
             right: '-8%',
             top: '50%',
             transform: 'translateY(-50%)',
-            height: '348px',
-            width: '225px',
-            zIndex: 10
+            height: '325px',
+            width: '210px',
+            zIndex: 10,
+            marginRight: '150px',
+            marginTop: '-100px'
           }}
         />
       </section>
