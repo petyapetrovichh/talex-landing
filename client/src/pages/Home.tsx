@@ -229,6 +229,24 @@ export default function Home() {
           }}
         />
         
+        {/* Phone Mockup Center Bottom - Trending */}
+        <img 
+          src="/images/phone-trending.png" 
+          alt="Trending Content" 
+          className="hidden md:block absolute" 
+          style={{
+            right: '50%',
+            top: '50%',
+            transform: 'translateY(-50%)',
+            height: '349.85px',
+            width: '200px',
+            maxWidth: '35%',
+            zIndex: 10,
+            marginRight: '-178px',
+            marginTop: '220px'
+          }}
+        />
+        
         {/* Phone Mockup Right - Main Feed */}
         <img 
           src="/images/phone-mockup.png" 
