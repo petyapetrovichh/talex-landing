@@ -264,6 +264,21 @@ export default function Home() {
             marginRight: '160px'
           }}
         />
+        
+        {/* Phone Mockup Far Right - Profile */}
+        <img 
+          src="/images/phone-profile.png" 
+          alt="User Profile" 
+          className="hidden md:block absolute" 
+          style={{
+            right: '-8%',
+            top: '50%',
+            transform: 'translateY(-50%)',
+            height: '348px',
+            width: '225px',
+            zIndex: 10
+          }}
+        />
       </section>
 
       {/* Discover Works Section */}
