@@ -189,7 +189,7 @@ export default function Home() {
             </p>
             <Button 
               className={`bg-primary text-white hover:bg-black rounded-none h-14 px-8 text-lg font-bold uppercase tracking-wide ${buttonTaleSpring ? 'spring-button' : ''}`}
-              style={{marginLeft: '-100px', color: buttonTaleHovered || buttonTaleClicked ? '#ffffff' : '#000000', backgroundColor: buttonTaleHovered || buttonTaleClicked ? '#000000' : '#6ff000', borderRadius: '1000px'}}
+              style={{marginLeft: '0px', color: buttonTaleHovered || buttonTaleClicked ? '#ffffff' : '#000000', backgroundColor: buttonTaleHovered || buttonTaleClicked ? '#000000' : '#6ff000', borderRadius: '1000px'}}
               onClick={() => {
                 setButtonTaleClicked(true);
                 setButtonTaleSpring(true);
