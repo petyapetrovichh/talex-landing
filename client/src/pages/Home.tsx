@@ -10,6 +10,19 @@ const springStyle = `
     100% { transform: scale(1); }
   }
   .spring-button { animation: spring 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); }
+  
+  @keyframes slideInFromLeft {
+    0% { transform: translateX(-100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+  
+  @keyframes slideOutToLeft {
+    0% { transform: translateX(0); opacity: 1; }
+    100% { transform: translateX(-100%); opacity: 0; }
+  }
+  
+  .menu-slide-in { animation: slideInFromLeft 0.4s ease-out forwards; }
+  .menu-slide-out { animation: slideOutToLeft 0.4s ease-out forwards; }
 `;
 
 export default function Home() {
@@ -147,10 +160,10 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Mobile Menu Dropdown */}
+          {/* Mobile Menu Slide-in */}
           {mobileMenuExpanded && (
-            <div className="md:hidden fixed top-20 left-0 right-0 bg-white border-b border-gray-200 shadow-lg z-40">
-              <div className="p-4 space-y-2">
+            <div className="md:hidden fixed top-20 left-0 h-screen w-full bg-white shadow-lg z-40 menu-slide-in" style={{maxWidth: '100vw', overflow: 'hidden'}}>
+              <div className="p-4 space-y-2 h-full overflow-y-auto">
                 {/* Explore Section */}
                 <div>
                   <button 
