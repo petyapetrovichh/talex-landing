@@ -176,7 +176,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 md:pt-48 md:pb-32 border-b border-black/5" style={{backgroundImage: 'url(/images/hero-background.png)', backgroundSize: '110% 110%', backgroundPosition: 'center', backgroundAttachment: 'scroll', minHeight: '100vh'}}>
+      <section className="pt-32 pb-20 md:pt-48 md:pb-32 border-b border-black/5 relative" style={{backgroundImage: 'url(/images/hero-background.png)', backgroundSize: '110% 110%', backgroundPosition: 'center', backgroundAttachment: 'scroll', minHeight: '100vh'}}>
         <div className="container mx-auto grid md:grid-cols-2 gap-12 items-stretch">
           <div className="space-y-8">
             <h1 className="text-5xl md:text-7xl font-display font-bold leading-[1.1] tracking-tight text-black" style={{fontSize: '45px', maxWidth: '90%', marginTop: '-56px', marginBottom: '25px', fontFamily: '"Abril Fatface", serif', fontWeight: '300'}}>
@@ -209,9 +209,23 @@ export default function Home() {
               Tell a Tale
             </Button>
           </div>
-
-
         </div>
+        
+        {/* Phone Mockup - Absolute Positioning */}
+        <img 
+          src="/images/phone-mockup.png" 
+          alt="TaleX App Interface" 
+          className="hidden md:block absolute" 
+          style={{
+            right: '5%',
+            top: '50%',
+            transform: 'translateY(-50%)',
+            height: '600px',
+            width: 'auto',
+            maxWidth: '35%',
+            zIndex: 10
+          }}
+        />
       </section>
 
       {/* Discover Works Section */}
