@@ -74,15 +74,16 @@ export default function Home() {
         
         <div className="container mx-auto flex items-center justify-between h-20" style={{paddingLeft: '25px'}}>
           {/* Left: Hamburger Menu Button for Mobile Only */}
-          <button
-            className="md:hidden"
-            onClick={() => setMobileMenuExpanded(!mobileMenuExpanded)}
-            style={{width: '24px', height: '20px', padding: 0, background: 'none', border: 'none', cursor: 'pointer', display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}
-          >
-            <span style={{width: '100%', height: '2px', backgroundColor: '#000'}}></span>
-            <span style={{width: '100%', height: '2px', backgroundColor: '#000'}}></span>
-            <span style={{width: '100%', height: '2px', backgroundColor: '#000'}}></span>
-          </button>
+          {isMobile && (
+            <button
+              onClick={() => setMobileMenuExpanded(!mobileMenuExpanded)}
+              style={{width: '24px', height: '20px', padding: 0, background: 'none', border: 'none', cursor: 'pointer', display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}
+            >
+              <span style={{width: '100%', height: '2px', backgroundColor: '#000'}}></span>
+              <span style={{width: '100%', height: '2px', backgroundColor: '#000'}}></span>
+              <span style={{width: '100%', height: '2px', backgroundColor: '#000'}}></span>
+            </button>
+          )}
 
           {/* Logo Placeholder (empty for flex layout) */}
           <div className="flex items-center invisible">
