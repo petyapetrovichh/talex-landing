@@ -153,9 +153,17 @@ export default function Home() {
               </button>
               {communityOpen && (
                 <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg p-3 min-w-max z-50" style={{marginTop: '0px'}}>
-                  <a href="https://t.me/talex_chain_community" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Telegram</a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Discord</a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Twitter</a>
+                  <a href="https://x.com/talex_chain" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">X</a>
+                  <a href="https://t.me/TaleX_chain" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Telegram</a>
+                  <a href="https://discord.gg/talex" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Discord</a>
+                  <a href="https://www.binance.com/en/square/profile/talex_chain" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Binance Square</a>
+                  <a href="https://coinmarketcap.com/community/profile/TaleX_chain" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">CoinMarketCap</a>
+                  <a href="https://facebook.com/TaleXchain" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Facebook</a>
+                  <a href="https://youtube.com/@talex_chain" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">YouTube</a>
+                  <a href="https://www.instagram.com/talexchain" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Instagram</a>
+                  <a href="https://www.tiktok.com/@talex_chain" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">TikTok</a>
+                  <a href="https://open.spotify.com/show/51Q8zhfB2ADlmyEaUzT3iR" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">Spotify</a>
+                  <a href="https://www.linkedin.com/company/talexchain" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-50 transition-colors text-black">LinkedIn</a>
                 </div>
               )}
             </div>
