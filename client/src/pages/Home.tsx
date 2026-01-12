@@ -40,7 +40,7 @@ export default function Home() {
       }`}>
         {/* Logo - Independent positioning */}
         <a href="#" className="block absolute left-0 top-1/2 -translate-y-1/2" style={{paddingLeft: '25px'}}>
-          <img src="/images/logo.png" alt="TaleX Logo" className="h-8 w-auto" style={{height: '25px'}} />
+          <img src="/images/logo.png" alt="TaleX Logo" className="h-8 w-auto" style={{height: '20px'}} />
         </a>
         
         <div className="container mx-auto flex items-center justify-between h-20" style={{paddingLeft: '25px'}}>
@@ -160,7 +160,7 @@ export default function Home() {
       <section className="pt-32 pb-20 md:pt-48 md:pb-32 border-b border-black/5 relative" style={{backgroundImage: 'url(/images/hero-background.png)', backgroundSize: '110% 110%', backgroundPosition: 'center', backgroundAttachment: 'scroll', minHeight: '100vh'}}>
         {/* Mobile Hero Content */}
         <div className="md:hidden container mx-auto px-4 space-y-6 relative z-20">
-          <h1 className="text-3xl font-bold leading-tight text-black" style={{fontFamily: '"Abril Fatface", serif', fontWeight: '700'}}>
+          <h1 className="text-3xl font-bold leading-tight text-black" style={{fontFamily: '"Abril Fatface", serif', fontWeight: '300', fontSize: '26px'}}>
             TaleX is where<br />
             <span style={{color: '#6FF000'}}>great content</span> <span style={{color: '#000000'}}>pays off</span><br />
             both creators and supporters
