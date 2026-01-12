@@ -211,7 +211,23 @@ export default function Home() {
           </div>
         </div>
         
-        {/* Phone Mockup - Absolute Positioning */}
+        {/* Phone Mockup Left - Support & Earn */}
+        <img 
+          src="/images/phone-support-earn.png" 
+          alt="Support & Earn Interface" 
+          className="hidden md:block absolute" 
+          style={{
+            left: '5%',
+            top: '50%',
+            transform: 'translateY(-50%)',
+            height: '600px',
+            width: 'auto',
+            maxWidth: '35%',
+            zIndex: 10
+          }}
+        />
+        
+        {/* Phone Mockup Right - Main Feed */}
         <img 
           src="/images/phone-mockup.png" 
           alt="TaleX App Interface" 
