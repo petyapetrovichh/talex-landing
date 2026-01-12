@@ -27,6 +27,7 @@ export default function Home() {
   const [mobileExploreOpen, setMobileExploreOpen] = useState(false);
   const [mobileCompanyOpen, setMobileCompanyOpen] = useState(false);
   const [mobileCommunityOpen, setMobileCommunityOpen] = useState(false);
+  const [mobileMenuExpanded, setMobileMenuExpanded] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,15 +49,15 @@ export default function Home() {
         </a>
         
         <div className="container mx-auto flex items-center justify-between h-20" style={{paddingLeft: '25px'}}>
-          {/* Left: Hamburger Menu for Mobile */}
-          <button 
-            className="md:hidden flex flex-col gap-1.5 p-2"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            style={{height: '20px', justifyContent: 'center'}}
+          {/* Left: Hamburger Menu Button for Mobile */}
+          <button
+            className="md:hidden"
+            onClick={() => setMobileMenuExpanded(!mobileMenuExpanded)}
+            style={{width: '24px', height: '20px', padding: 0, background: 'none', border: 'none', cursor: 'pointer', display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}
           >
-            <div className="w-6 h-0.5 bg-black transition-all"></div>
-            <div className="w-6 h-0.5 bg-black transition-all"></div>
-            <div className="w-6 h-0.5 bg-black transition-all"></div>
+            <span style={{width: '100%', height: '2px', backgroundColor: '#000'}}></span>
+            <span style={{width: '100%', height: '2px', backgroundColor: '#000'}}></span>
+            <span style={{width: '100%', height: '2px', backgroundColor: '#000'}}></span>
           </button>
 
           {/* Logo Placeholder (empty for flex layout) */}
@@ -136,7 +137,7 @@ export default function Home() {
           </div>
 
           {/* Mobile Menu Dropdown */}
-          {mobileMenuOpen && (
+          {mobileMenuExpanded && (
             <div className="md:hidden fixed top-20 left-0 right-0 bg-white border-b border-gray-200 shadow-lg z-40">
               <div className="p-4 space-y-2">
                 {/* Explore Section */}
