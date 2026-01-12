@@ -223,7 +223,9 @@ export default function Home() {
             height: '600px',
             width: 'auto',
             maxWidth: '35%',
-            zIndex: 10
+            zIndex: 10,
+            marginTop: '40px',
+            marginRight: '150px'
           }}
         />
       </section>
