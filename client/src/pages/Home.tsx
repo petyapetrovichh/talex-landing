@@ -129,7 +129,7 @@ export default function Home() {
           </div>
 
           {/* Right: Search & Action */}
-          <div className="flex items-center gap-6" style={{marginRight: '-50px'}}>
+          <div className="flex items-center gap-6" style={{marginRight: '-25px'}}>
             <div className="hidden md:block relative group">
               <div className="relative flex items-center">
                 <Search className="absolute left-3 w-4 h-4 text-gray-400" />
