@@ -210,6 +210,10 @@ export default function Home() {
             </Button>
           </div>
 
+          {/* Right: Mobile Mockup */}
+          <div className="hidden md:flex justify-center items-center">
+            <img src="/images/mobile-mockup.png" alt="TaleX Mobile App" className="w-full max-w-md h-auto" />
+          </div>
         </div>
       </section>
 
