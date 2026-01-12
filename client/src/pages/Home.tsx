@@ -177,7 +177,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 md:pt-48 md:pb-32 border-b border-black/5" style={{backgroundImage: 'url(/images/hero-background.png)', backgroundSize: '110% 110%', backgroundPosition: 'center', backgroundAttachment: 'scroll', minHeight: '100vh'}}>
-        <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div className="container mx-auto grid md:grid-cols-2 gap-12 items-stretch">
           <div className="space-y-8">
             <h1 className="text-5xl md:text-7xl font-display font-bold leading-[1.1] tracking-tight text-black" style={{fontSize: '45px', maxWidth: '90%', marginTop: '-56px', marginBottom: '25px', fontFamily: '"Abril Fatface", serif', fontWeight: '300'}}>
               TaleX is where<br />
@@ -211,8 +211,8 @@ export default function Home() {
           </div>
 
           {/* Right: Mobile Mockup */}
-          <div className="hidden md:flex justify-center items-center">
-            <img src="/images/mobile-mockup.png" alt="TaleX Mobile App" className="w-full max-w-md h-auto" />
+          <div className="hidden md:flex justify-center items-center h-full">
+            <img src="/images/mobile-mockup.png" alt="TaleX Mobile App" className="w-full max-w-md h-full object-cover" />
           </div>
         </div>
       </section>
