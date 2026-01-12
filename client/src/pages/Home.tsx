@@ -140,7 +140,7 @@ export default function Home() {
               setButtonSpring(true);
               setTimeout(() => setButtonSpring(false), 400);
               setTimeout(() => {
-                window.location.href = 'https://www.talex.world/profile';
+                window.location.href = 'https://www.talex.world/publish';
               }, 200);
             }}
             onMouseEnter={() => setButtonHovered(true)}
