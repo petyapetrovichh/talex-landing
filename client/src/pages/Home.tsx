@@ -254,6 +254,40 @@ export default function Home() {
           >
             Start publishing
           </Button>
+
+          {/* Mobile: Start Publishing Button */}
+          <Button 
+            className={`md:hidden ml-auto ${buttonSpring ? 'spring-button' : ''}`}
+            style={{
+              backgroundColor: buttonHovered || buttonClicked ? '#000000' : '#6ff000',
+              color: buttonHovered || buttonClicked ? '#ffffff' : '#000000',
+              height: '36px',
+              paddingLeft: '16px',
+              paddingRight: '16px',
+              fontSize: '12px',
+              borderRadius: '1000px', 
+              fontWeight: '700', 
+              borderColor: '#ffffff', 
+              fontFamily: '"Alibaba PuHuiTi 3.0", sans-serif'
+            }}
+            onClick={() => {
+              setButtonClicked(true);
+              setButtonSpring(true);
+              setTimeout(() => setButtonSpring(false), 400);
+              setTimeout(() => {
+                window.location.href = 'https://www.talex.world/publish';
+              }, 200);
+            }}
+            onMouseEnter={() => setButtonHovered(true)}
+            onMouseLeave={() => {
+              setButtonHovered(false);
+              if (!buttonClicked) {
+                setButtonClicked(false);
+              }
+            }}
+          >
+            Start publishing
+          </Button>
         </div>
       </nav>
 
