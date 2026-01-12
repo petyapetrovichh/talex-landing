@@ -295,7 +295,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 md:pt-48 md:pb-32 border-b border-black/5 relative md:bg-cover" style={{backgroundImage: window.innerWidth < 768 ? 'url(/images/hero-mobile-bg.png)' : 'url(/images/hero-background.png)', backgroundSize: window.innerWidth < 768 ? 'cover' : '110% 110%', backgroundPosition: 'center', backgroundAttachment: 'local', minHeight: window.innerWidth < 768 ? '100dvh' : '100vh', height: window.innerWidth < 768 ? '100dvh' : 'auto', overflow: 'hidden'}}>
         {/* Mobile Hero Content */}
-        <div className="md:hidden container mx-auto px-4 space-y-6 relative z-20" style={{height: '537px'}}>
+        <div className="md:hidden container mx-auto px-4 space-y-6 relative z-20" style={{height: '571px'}}>
           <h1 className="text-3xl font-bold leading-tight text-black" style={{fontFamily: '"Abril Fatface", serif', fontWeight: '800', fontSize: '30px'}}>
             TaleX is where<br />
             <span style={{color: '#6FF000'}}>great content</span> <span style={{color: '#000000'}}>pays off</span><br />
