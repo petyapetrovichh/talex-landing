@@ -281,6 +281,23 @@ export default function Home() {
             marginTop: '-100px'
           }}
         />
+        
+        {/* Phone Mockup Far Right Bottom - Article */}
+        <img 
+          src="/images/phone-article.png" 
+          alt="Article Content" 
+          className="hidden md:block absolute" 
+          style={{
+            right: '-8%',
+            top: '50%',
+            transform: 'translateY(-50%)',
+            height: '325px',
+            width: '210px',
+            zIndex: 10,
+            marginRight: '150px',
+            marginTop: '260px'
+          }}
+        />
       </section>
 
       {/* Discover Works Section */}
