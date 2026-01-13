@@ -76,7 +76,7 @@ export default function Home() {
           </a>
 
           {/* Center: Navigation (Desktop Only) */}
-          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-black flex-1 justify-center">
+          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-black flex-1 justify-start ml-12">
             {/* Explore */}
             <div 
               className="relative"
@@ -253,10 +253,12 @@ export default function Home() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight" style={{fontFamily: '"Abril Fatface", serif'}}>
                 TaleX is where<br />
                 <span style={{color: '#6FF000'}}>great content</span><br />
-                <span>pays off</span>
+                pays off<br />
+                <span>both creators and</span><br />
+                <span>supporters</span>
               </h1>
               <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                TaleX is a new content app where creators and fans grow together. Here, supporting content means more than donating — it means predicting its future and helping it spread.
+                TaleX is a new content app where creators and fans grow together. Here, supporting content means more than donating — it means predicting its future and helping it spread. Every Tale, whether it's an article, book, podcast, or video, has X ways to travel farther, faster, and reward those who believe in it.
               </p>
               <Button 
                 className="rounded-full px-8 h-12 text-base font-bold uppercase tracking-wide"
@@ -282,7 +284,7 @@ export default function Home() {
             {/* Right: App Screenshots */}
             <div className="flex justify-center items-center">
               <div className="relative w-full max-w-sm">
-                <img src="/images/mobile-app-feed.png" alt="TaleX App" className="w-full" />
+                <img src="/images/hero-phone.png" alt="TaleX App" className="w-full" />
               </div>
             </div>
           </div>
@@ -294,9 +296,10 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-8">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* Left: Content */}
-            <div className="space-y-6">
+              <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight" style={{fontFamily: '"Abril Fatface", serif'}}>
-                Discover works worth supporting
+                Discover works<br />
+                worth supporting
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
                 On TaleX, discovery isn't driven by ads, sponsored content, or engagement algorithms. The Home feed is a place to see what you and your friends genuinely choose to support.
@@ -310,22 +313,22 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-4">
               <div className="flex justify-center">
                 <div className="relative w-32 md:w-40 border-4 border-black rounded-2xl overflow-hidden bg-black">
-                  <img src="/images/mobile-app-feed.png" alt="App 1" className="w-full" />
+                  <img src="/images/discover-phone.png" alt="App 1" className="w-full" />
                 </div>
               </div>
               <div className="flex justify-center">
                 <div className="relative w-32 md:w-40 border-4 border-black rounded-2xl overflow-hidden bg-black">
-                  <img src="/images/mobile-app-feed.png" alt="App 2" className="w-full" />
+                  <img src="/images/discover-phone.png" alt="App 2" className="w-full" />
                 </div>
               </div>
               <div className="flex justify-center">
                 <div className="relative w-32 md:w-40 border-4 border-black rounded-2xl overflow-hidden bg-black">
-                  <img src="/images/mobile-app-feed.png" alt="App 3" className="w-full" />
+                  <img src="/images/discover-phone.png" alt="App 3" className="w-full" />
                 </div>
               </div>
               <div className="flex justify-center">
                 <div className="relative w-32 md:w-40 border-4 border-black rounded-2xl overflow-hidden bg-black">
-                  <img src="/images/mobile-app-feed.png" alt="App 4" className="w-full" />
+                  <img src="/images/discover-phone.png" alt="App 4" className="w-full" />
                 </div>
               </div>
             </div>
@@ -340,7 +343,7 @@ export default function Home() {
             {/* Left: Phone Mockup */}
             <div className="flex justify-center order-2 md:order-1">
               <div className="relative w-40 md:w-48 border-4 border-black rounded-2xl overflow-hidden bg-black">
-                <img src="/images/mobile-app-feed.png" alt="Support Feature" className="w-full" />
+                <img src="/images/support-phone.png" alt="Support Feature" className="w-full" />
               </div>
             </div>
 
